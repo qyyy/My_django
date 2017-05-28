@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自强学堂</title>
+</head>
+<body>
+
+{% for i in list %}
+{{ i }}{% if not forloop.last %},{% endif %}
+{% endfor %}
+
+</body>
+</html>
