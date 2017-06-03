@@ -19,5 +19,7 @@ from learn import views as learn_views
 
 urlpatterns = [
     url(r'^$',learn_views.home,name='home'),
+    url(r'^home$',learn_views.home_reverse),
+    url(r'^zhuye$',learn_views.home_reverse),
     url(r'^admin/', admin.site.urls),
 ]

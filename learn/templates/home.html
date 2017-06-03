@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <title>自强学堂</title>
 </head>
-<body>
 
+{{ request.path }}
+</br>
 {% for i in list %}
-{{ i }}{% if not forloop.last %},{% endif %}
+{{ i }}&nbsp;
+    {% if i >= 60 %}
+    及格！
+    {% else %}
+    不及格！
+    {% endif %}
+    {% if not forloop.last %}</br>{% endif %}
 {% endfor %}
 
 </body>
